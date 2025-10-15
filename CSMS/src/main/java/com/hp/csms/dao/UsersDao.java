@@ -8,4 +8,8 @@ import com.hp.csms.entity.Users;
 @Repository
 public interface UsersDao extends CrudRepository<Users, Integer>{
 
+	Users findByEmail(String email);
+
+    void deleteByEmail(String email);
+
 }

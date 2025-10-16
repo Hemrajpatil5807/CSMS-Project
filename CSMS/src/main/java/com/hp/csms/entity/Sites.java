@@ -69,6 +69,21 @@ public class Sites {
 		this.manager_id = manager_id;
 	}
 
-	
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = LocalDate.parse(startDate);
+	}
+
+	public LocalDate getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(String endDate) {
+		this.endDate = LocalDate.parse(endDate);
+	}
+
     
 }

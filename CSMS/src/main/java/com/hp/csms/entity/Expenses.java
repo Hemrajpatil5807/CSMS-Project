@@ -41,21 +41,21 @@ public class Expenses {
 	
 	}
 
-	public Expenses(int expence_id, Sites site_id, String expense_type, double amount, String date) {
+	public Expenses(int expence_id, Sites site_id, String expense_type, double amount, LocalDate date) {
 		
 		this.expense_id = expence_id;
 		this.site_id = site_id;
 		this.expense_type = expense_type;
 		this.amount = amount;
-		this.date = LocalDate.parse(date);
+		this.date = date;
 	}
 	
-	public Expenses( Sites site_id, String expense_type, double amount, String date) {
+	public Expenses( Sites site_id, String expense_type, double amount, LocalDate date) {
 		
 		this.site_id = site_id;
 		this.expense_type = expense_type;
 		this.amount = amount;
-		this.date = LocalDate.parse(date);
+		this.date = date;
 	}
 	
 	
